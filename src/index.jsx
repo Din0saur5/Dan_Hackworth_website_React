@@ -11,6 +11,10 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
+import ErrorPage from "./routes/ErrorPage";
+import "./App.css"
+import Footer from "./components/Footer";
+
 
 const AppLayout = () =>{
 
@@ -18,6 +22,7 @@ const AppLayout = () =>{
     <>
     <Navbar/>
     <Outlet/>
+    <Footer />
     </>
   )
 }
@@ -26,6 +31,7 @@ const AppLayout = () =>{
 const router = createBrowserRouter([
   {
     element: <AppLayout/>,
+   errorElement: <ErrorPage/>,
     children:[
       {
         path: "/",

@@ -11,16 +11,18 @@ export const Button = ({
   type,
   onClick,
   buttonStyle,
-  buttonSize
+  buttonSize,
+  linkLoc
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+  const checkLink = linkLoc? linkLoc: ""
+  console.log(checkLink)
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link to={checkLink} className='btn-mobile'>
     <button
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}

@@ -1,35 +1,32 @@
 import React from 'react';
 
-import { Button } from './Button';
+import "./Button.css"
 import './Hook.css';
+import { HashLink } from 'react-router-hash-link';
 
 
 function Hook() {
   return (
-    <div className='hook-container'>
+    <>
+    <div className='hook-container' >
       <video src="../../public/website-header.mp4" autoPlay loop muted />
   
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hook-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+        <HashLink smooth to="#dashboard">
+        <button
+          className='btn--outline btn--large'
+          
         >
           View DashBoard 
-        </Button>
-        
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          Log-in/Sign-up <i className='far fa-play-circle' />
-        </Button>
+        </button>
+        </HashLink>
       </div>
+      
     </div>
+    <div id="dashboard"></div>
+    </>
   );
 }
 

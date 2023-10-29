@@ -7,7 +7,7 @@ import {
     FooterLink,
     Heading,
 } from "./FooterStyles";
- 
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <Box>
@@ -25,18 +25,16 @@ const Footer = () => {
                 <Row>
                     <Column>
                         <Heading>About Links</Heading>
-                        <FooterLink href="#">
+                        <FooterLink href="https://dev.to/din0saur5">
                             Blog || Dev.to
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/Din0saur5">
                             Portfolio || Github
                         </FooterLink>
-                        <FooterLink href="#">
-                            Testimonials
-                        </FooterLink>
+                        <Link style={{"textDecoration": "none"}} to="/Contact"onClick={()=> {window.scrollTo(0, 0)}}> <FooterLink >Contact Me</FooterLink></Link>
                     </Column>
                     <Column>
-                        <Heading>School Projects</Heading>
+                        <Heading>Flatiron Projects</Heading>
                         <FooterLink href="https://github.com/Din0saur5/my-website-mobile">
                             Phase-0
                         </FooterLink>
@@ -72,7 +70,7 @@ const Footer = () => {
                         </FooterLink>
                     </Column>
                     <Column >
-                        <Heading>Contacts/Connections</Heading>
+                        <Heading>Connections</Heading>
                         <FooterLink href="#">
                             <i >
                                 <span

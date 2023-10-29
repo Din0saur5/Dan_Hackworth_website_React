@@ -14,7 +14,8 @@ import { Outlet } from "react-router-dom";
 import ErrorPage from "./routes/ErrorPage";
 import "./App.css"
 import Footer from "./components/Footer";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Portfolio from "./routes/Portfolio";
 
 const AppLayout = () =>{
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact/>,
       },
+      {
+        path: "portfolio",
+        element: <Portfolio/>,
+      }
     ]
   }
   

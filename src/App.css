@@ -12,11 +12,11 @@
 .about,
 .contact {
   display: flex;
-  height: 90vh;
+  height: 120vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  background-color: #000;
+  background-color: #19191a;
   color: #fff;
 }
 
@@ -47,3 +47,10 @@
 }
 
 /*home specific*/
+.dashboard{
+  background-color: #fff;
+  color: #19191a;
+ 
+  
+
+}

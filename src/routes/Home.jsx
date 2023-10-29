@@ -1,16 +1,21 @@
 import React, { Fragment } from 'react'
 import '../App.css';
 import Hook from '../components/Hook'
+import DashBoard from '../components/Dashboard';
+
 
 const Home = () => {
   return (
     <Fragment>
-    <Hook/>
-    <div className='home'>
       
-      <h1>Home</h1>
-     
+    <Hook/>
+    
+    <div className='home' >
+    <DashBoard/>    
     </div>
+      
+     
+
     
   
     </Fragment>

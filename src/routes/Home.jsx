@@ -10,7 +10,8 @@ const Home = () => {
       
     <Hook/>
     
-    <div className='home' >
+    <div className='home'>
+    
     <DashBoard/>    
     </div>
       

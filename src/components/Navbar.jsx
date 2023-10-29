@@ -19,10 +19,10 @@ const Navbar = () => {
       <IconContext.Provider value={{color:"#fff"}}>
         <nav className="navbar">
             <div className="navbar-container container">
-                <Link to="/" className='navbar-logo' onClick={closeMobileMenu} >
+                <Link to="/" className='navbar-logo' onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
                     <HiFire className='navbar-icon'
                     />
-                    Dan's World
+                    Hackworth SE
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                   {click? <FaTimes/>:<FaBars/>}

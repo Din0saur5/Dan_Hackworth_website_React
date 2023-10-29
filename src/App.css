@@ -47,9 +47,9 @@
 }
 
 /*home specific*/
-.dashboard{
-  background-color: #fff;
-  color: #19191a;
+.home{
+  object-fit: contain;
+    block-size: fit-content;
  
   
 

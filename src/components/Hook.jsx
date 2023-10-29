@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 function Hook() {
   return (
     <>
+     
     <div className='hook-container' >
       <video src="../../public/website-header.mp4" autoPlay loop muted />
   
@@ -25,7 +26,7 @@ function Hook() {
       </div>
       
     </div>
-    <div id="dashboard"></div>
+    
     </>
   );
 }

@@ -44,13 +44,42 @@
     margin-left: 1rem;
     font-size: 80px;
   }
+  .about-text{
+    font-size: 0.5rem;
+  }
 }
 
 /*home specific*/
 .home{
   object-fit: contain;
     block-size: fit-content;
- 
-  
 
 }
+/*about specific*/
+.deep{
+  background-image: url("../public/blue.jpg");
+}
+.about{
+  margin-left: 12%;
+  margin-right: 12%;
+  block-size: fit-content;
+    
+}
+.profile-pic{
+  position: absolute;
+  display: inline-block;
+  top: 10%;
+  left: 20%;
+
+  
+}
+.about-text{
+  display:flex;
+  padding: 5%;
+  line-height: 2;
+  font-size: 22pt;
+  text-wrap: break-word;
+  color:#fff
+}
+
+ 

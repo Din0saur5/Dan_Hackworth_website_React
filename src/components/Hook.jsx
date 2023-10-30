@@ -12,7 +12,7 @@ function Hook() {
     <div className='hook-container' >
       <video src="../../public/website-header.mp4" autoPlay loop muted />
   
-      <h1>ADVENTURE AWAITS</h1>
+      <h1>INNOVATION AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hook-btns'>
         <HashLink smooth to="#dashboard">

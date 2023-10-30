@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import "./Dashboard.css"
 
 
-const PhotoCarousel = () => {
+const PhotoCarousel = ({photoData}) => {
 
 const [index, setIndex] = useState(0);
 
@@ -14,7 +14,7 @@ const [index, setIndex] = useState(0);
 
   return (
     
-    <Carousel activeIndex={index} onSelect={handleSelect} className='Carousel'>
+    <Carousel activeIndex={index} onSelect={handleSelect} className='Carousel'touch={true} >
       <Carousel.Item className='carousel-item'>
         <img src='../../public/Photos/engagment_photo.jpg' alt='engagment photo' className='gallery-icon'/>
         

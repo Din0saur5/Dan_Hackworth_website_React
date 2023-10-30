@@ -7,6 +7,16 @@
 }
 .card-text{
     font-size: medium;
+    
+   
+   
+}
+.mobile{
+    display: none;
+    font-size: 11pt;
+}
+a:visited{
+    text-decoration: none !important;
 }
 
 .gallery-icon{
@@ -25,5 +35,9 @@
     .card-text{
         display:none
     }
+    .mobile{
+        display: inline-flex;
+    }
+
 }
 

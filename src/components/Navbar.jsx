@@ -29,17 +29,17 @@ const Navbar = () => {
                 </div>
                 <ul className={click? "nav-menu active": "nav-menu"}>
                   <li className='nav-item'>
-                    <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
+                    <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
                       Home
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/About" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu} >
+                    <NavLink to="/About" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}} >
                       About
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/Portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
+                    <NavLink to="/Portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
                       Portfolio
                     </NavLink>
                   </li>

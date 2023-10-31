@@ -61,7 +61,7 @@ const DashBoard = () => {
             <Card.Header>Photo Gallery</Card.Header>
             <Card.Body>
               <PhotoCarousel photoData={photoData}/>
-               <Link to="/AllPhotos" onClick={()=>{window.scrollTo(0, 0)}} style={{"textDecoration":"none"}}><Button>View All Photos</Button></Link>
+               <Link to="/photo gallery" onClick={()=>{window.scrollTo(0, 0)}} style={{"textDecoration":"none"}}><Button>View All Photos</Button></Link>
             </Card.Body>
           </Card>
           

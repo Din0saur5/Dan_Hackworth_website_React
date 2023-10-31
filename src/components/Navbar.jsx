@@ -6,6 +6,7 @@ import {HiFire} from "react-icons/hi"
 import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons"
 
+
 const Navbar = () => {
   const[click, setClick] = useState(false)
 
@@ -43,6 +44,7 @@ const Navbar = () => {
                       Portfolio
                     </NavLink>
                   </li>
+                 
                   
                 </ul>
             </div>

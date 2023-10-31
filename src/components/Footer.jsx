@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <Box>
+        <Box id>
             <h1
                 style={{
                     color: "green",

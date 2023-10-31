@@ -16,6 +16,7 @@ import "./App.css"
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Portfolio from "./routes/Portfolio";
+import PhotoGallery from "./routes/PhotoGallery";
 
 const AppLayout = () =>{
 
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "portfolio",
         element: <Portfolio/>,
+      },
+      {
+        path: "photo gallery",
+        element: <PhotoGallery/>,
       }
     ]
   }

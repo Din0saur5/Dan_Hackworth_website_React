@@ -16,15 +16,15 @@ const [index, setIndex] = useState(0);
     
     <Carousel activeIndex={index} onSelect={handleSelect} className='Carousel'touch={true} >
       <Carousel.Item className='carousel-item'>
-        <img src='../../public/Photos/engagment_photo.jpg' alt='engagment photo' className='gallery-icon'/>
+        <img src='/Photos/engagment_photo.jpg' alt='engagment photo' className='gallery-icon'/>
         
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
-        <img src= "../../public/Photos/kali.jpg" alt='second pic' className='gallery-icon'/>
+        <img src= "/Photos/kali.jpg" alt='second pic' className='gallery-icon'/>
     
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
-        <img src="../../public/Photos/barbarian_dan.jpg" alt='third pic' className='gallery-icon' />
+        <img src="/Photos/barbarian_dan.jpg" alt='third pic' className='gallery-icon' />
         
       </Carousel.Item>
     </Carousel>

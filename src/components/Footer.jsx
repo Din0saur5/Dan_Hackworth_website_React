@@ -56,8 +56,8 @@ const Footer = () => {
                     </Column>
                     <Column >
                         <Heading>Social Media</Heading>
-                        <FooterLink href="https:www.linkedIn.com/Daniel-Hackworth">
-                            LinkedIn
+                        <FooterLink href="https://profile.indeed.com/p/danielh-bfdqryx">
+                            Indeed
                         </FooterLink>
                         <FooterLink href="https://www.instagram.com/daniel_hackworth/">
                             Instagram

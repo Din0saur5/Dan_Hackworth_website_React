@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import '../App.css';
 import Hook from '../components/Hook'
 import DashBoard from '../components/Dashboard';
@@ -6,7 +6,7 @@ import DashBoard from '../components/Dashboard';
 
 const Home = () => {
   return (
-    <Fragment>
+    <>
       
     <Hook/>
     
@@ -19,7 +19,7 @@ const Home = () => {
 
     
   
-    </Fragment>
+    </>
   )
 }
 

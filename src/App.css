@@ -8,6 +8,28 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/*scroll bar fun*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #19191a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html, body { max-width: 100%; overflow-x: hidden; }
 /* base page*/
 .home,
 .about,
@@ -19,7 +41,7 @@
   font-size: 3rem;
   background-color: #19191a;
   color: #fff;
-  
+  overflow-x: hidden;
 }
 
 .page-icon {

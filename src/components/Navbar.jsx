@@ -20,7 +20,7 @@ const Navbar = () => {
       <IconContext.Provider value={{color:"#fff"}}>
         <nav className="navbar">
             <div className="navbar-container container">
-                <Link to="/" className='navbar-logo' onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
+                <Link to="/" className='navbar-logo' onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}} style={{'marginBottom': '2%'}}>
                     <HiFire className='navbar-icon'
                     />
                     Hackworth SE

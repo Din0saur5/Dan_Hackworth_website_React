@@ -42,6 +42,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
   background-color: #19191a;
   color: #fff;
   overflow-x: hidden;
+ 
 }
 
 .page-icon {
@@ -71,7 +72,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     font-size: 80px;
   }
   div.about,
-  div.photo-gallery{
+  div.photo-gallery,
+  div.contact{
     margin-left: 3%;
     margin-right: 3%;
    
@@ -99,7 +101,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .deep-about{
   background-image: url("/blue.jpg");
 }
-.about{
+.about,
+.contact{
   margin-left: 12%;
   margin-right: 12%;
   block-size: fit-content;
@@ -200,4 +203,28 @@ article{
       margin: 0 0 0 2% 
     
     }
+  }
+
+  /*contact me form*/
+  .deep-contact{
+    background-image: url('/stacks.jpg');
+   
+  }
+  
+  iframe{
+    height: 100vh;
+    width: 50vh;
+    
+    
+  }
+
+  @media screen and (max-width: 600px){
+    div.contact{
+      flex-direction: column;
+      height:180vh
+    }
+
+     iframe{
+      height: 100%;
+    } 
   }

@@ -3,7 +3,7 @@ import Figure from 'react-bootstrap/Figure'
 
 const About = () => {
   return (
-    <div className='deep'>
+    <div className='deep-about'>
       <div className="about">
         <article>
           <img

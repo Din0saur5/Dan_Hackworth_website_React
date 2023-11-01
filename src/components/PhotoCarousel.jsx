@@ -15,18 +15,14 @@ const [index, setIndex] = useState(0);
   return (
     
     <Carousel activeIndex={index} onSelect={handleSelect} className='Carousel'touch={true} >
-      <Carousel.Item className='carousel-item'>
-        <img src='/Photos/engagment_photo.jpg' alt='engagment photo' className='gallery-icon'/>
-        
-      </Carousel.Item>
-      <Carousel.Item className='carousel-item'>
-        <img src= "/Photos/kali.jpg" alt='second pic' className='gallery-icon'/>
+     {photoData.slice(0,5).map(photo=>{
+        return (<Carousel.Item className='carousel-item'>
+        <img src={photo.src} alt={photo.alt} className='gallery-icon'/>
     
       </Carousel.Item>
-      <Carousel.Item className='carousel-item'>
-        <img src="/Photos/barbarian_dan.jpg" alt='third pic' className='gallery-icon' />
-        
-      </Carousel.Item>
+      )
+     })}
+      
     </Carousel>
   );
 }

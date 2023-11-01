@@ -1,5 +1,9 @@
-create data base for photos for easy laod into grid
-add more photos to gallary
-format about page nice and simply
-add parallex effect popout
+format photo array to grid gallery with thumbnail sizes
+add lightbox
+
+add parallex effect popout for portfolio
 make the mobile version of portfolio
+
+fix footer so non-links dont seem like links
+
+add contact page with stmp functionality

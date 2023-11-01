@@ -32,6 +32,9 @@ const Footer = () => {
                             Portfolio || Github
                         </FooterLink>
                         <Link style={{"textDecoration": "none"}} to="/Contact"onClick={()=> {window.scrollTo(0, 0)}}> <FooterLink >Contact Me</FooterLink></Link>
+                        <br/>
+                        <Link style={{"textDecoration": "none"}} to="/photo gallery"onClick={()=> {window.scrollTo(0, 0)}}> <FooterLink >Photo Gallery</FooterLink></Link>
+  
                     </Column>
                     <Column>
                         <Heading>Flatiron Projects</Heading>
@@ -56,8 +59,8 @@ const Footer = () => {
                     </Column>
                     <Column >
                         <Heading>Social Media</Heading>
-                        <FooterLink href="https:www.linkedIn.com/Daniel-Hackworth">
-                            LinkedIn
+                        <FooterLink href="https://profile.indeed.com/p/danielh-bfdqryx">
+                            Indeed
                         </FooterLink>
                         <FooterLink href="https://www.instagram.com/daniel_hackworth/">
                             Instagram

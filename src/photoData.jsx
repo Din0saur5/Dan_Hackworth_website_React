@@ -1,21 +1,21 @@
 import React from "react";
-//add a starred function to add to dashboard 
+//add first 5 to dashboard
 const photoNames = [
-    "barbarian_dan.jpg",
-    "elf_sheila.jpg",
-    "engagment_photo.jpg",
-    "kali.jpg",
-    "profile-picture.jpeg",
-    "renfair2.JPG",
-    "yogi_and_I.PNG",
-    "Finished-wizard-robes.jpg",
-    "My-set-up.JPEG",
-    "Wizard-Dan-vs-dragons.JPG",
-    "Spiffy-Dan.JPG",
-    "Wizard-at-the-faire.JPEG",
-    "Pumpkin-picking-20203.JPEG",
-    "Tomatoes_2022.jpg",
-    "Kayaking.JPEG",
+  "engagment_photo.jpg",
+  "Tomatoes_2022.jpg",
+  "Kayaking.JPEG",
+  "Wizard-Dan-vs-dragons.JPG",
+  "kali.jpg",
+  "profile-picture.jpeg",
+  "renfair2.JPG",
+  "yogi_and_I.PNG",
+  "Finished-wizard-robes.jpg",
+  "My-set-up.JPEG",
+  "elf_sheila.jpg",
+  "Spiffy-Dan.JPG",
+  "Wizard-at-the-faire.JPEG",
+  "Pumpkin-picking-20203.JPEG",
+  "barbarian_dan.jpg",
     "Wooden-bridge.JPG",
     "Making-pottery.JPG",
     "Puppy-Kali-socks.JPG",
@@ -27,5 +27,5 @@ const photoNames = [
     return { src: `/Photos/${photoName}`, alt: name };
   });
   
-  console.log(photoData);
+ 
 export default photoData

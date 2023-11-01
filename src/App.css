@@ -56,11 +56,12 @@ html, body { max-width: 100%; overflow-x: hidden; }
   justify-content: center;
   width: 100%;
 }
-
+/*mobile specs*/
 @media screen and (max-width: 960px) {
   .home,
   .about,
-  .contact {
+  .contact,
+  .photo-gallery {
     font-size: 2.5rem;
     background-size: cover;
   }
@@ -69,7 +70,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
     margin-left: 1rem;
     font-size: 80px;
   }
-  div.about{
+  div.about,
+  div.photo-gallery{
     margin-left: 3%;
     margin-right: 3%;
    
@@ -94,7 +96,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 }
 /*about specific*/
-.deep{
+.deep-about{
   background-image: url("/blue.jpg");
 }
 .about{
@@ -131,4 +133,59 @@ article{
   margin-bottom: 2%;
 }
 
+ /* photo Gallery specific*/
  
+  .deep-gallery{
+    background-image: url("/red.jpg");
+    width:100%;
+    block-size: fit-content;
+   
+  }
+  .photo-gallery{
+   
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: #19191a;
+ 
+  }
+ 
+  .gallery-col img{
+    max-width: 100%;
+    cursor: pointer;
+    margin-top: 5%;
+    vertical-align: middle;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .gallery-col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gallery-col {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gallery-col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

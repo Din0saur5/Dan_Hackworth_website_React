@@ -1,6 +1,4 @@
 import React from 'react';
-
-import "./Button.css"
 import './Hook.css';
 import { HashLink } from 'react-router-hash-link';
 
@@ -10,7 +8,7 @@ function Hook() {
     <>
      
     <div className='hook-container' >
-      <video src="../../public/website-header.mp4" autoPlay loop muted />
+      <video src="/website-header.mp4" autoPlay loop muted />
   
       <h1>INNOVATION AWAITS</h1>
       <p>What are you waiting for?</p>

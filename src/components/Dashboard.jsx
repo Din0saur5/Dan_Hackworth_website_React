@@ -73,7 +73,7 @@ const DashBoard = () => {
             text='dark'
             bg='light'
             className="mb-2 dash-Card">
-            <Card.Img variant='top' src='../../public/Photos/profile-picture.jpeg'></Card.Img>
+            <Card.Img variant='top' src='/Photos/profile-picture.jpeg'></Card.Img>
             <Card.Body>
              <Card.Title> About Me </Card.Title>
               <Card.Text className="card-text">

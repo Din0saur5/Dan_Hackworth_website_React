@@ -179,6 +179,11 @@ article{
     .gallery-col {
       flex: 50%;
       max-width: 50%;
+        
+    }
+    .gallery-col img{
+      max-width: 30%;
+      margin-left: 2%
     }
   }
   
@@ -187,5 +192,11 @@ article{
     .gallery-col {
       flex: 100%;
       max-width: 100%;
+    
+      
+    }
+    .gallery-col img{
+      max-width: 30%;
+      margin-left: 2%
     }
   }

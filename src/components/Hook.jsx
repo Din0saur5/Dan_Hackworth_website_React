@@ -14,10 +14,7 @@ function Hook() {
       <p>What are you waiting for?</p>
       <div className='hook-btns'>
         <HashLink smooth to="#dashboard">
-        <button
-          className='btn--outline btn--large'
-          
-        >
+        <button className='btn--outline btn--large'>
           View DashBoard 
         </button>
         </HashLink>

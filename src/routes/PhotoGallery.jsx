@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import photoData from '../photoData';
 import '../App.css'
-import MyModal from '../components/MyModal';
+import Lightbox from '../components/Lightbox';
 
 
 
@@ -14,20 +14,28 @@ const PhotoGallery = () => {
 //start with photo grid and 
 //MdOutlineArrowBackIosNew icons
 //MdOutlineArrowForwardIos icons
-const [selectedImage, setSelectedImage] = useState({src:"", alt:""})
-const [currentIndex, setCurrentIndex] = useState(-1)
+const [selectedImage, setSelectedImage] = useState({src:"", alt:"",caption:'', id:0})
 const [modalShow, setModalShow] = useState(false);
 
-const handleClickPhoto = (photo,index) => {
-  setCurrentIndex(index)
+const handleClickPhoto = (photo) => {
   setSelectedImage(photo)
   setModalShow(true)
-  console.log(modalShow, index, photo)
+  
+  
 }
 
 
-const handeChangeSelcetion = (direction, index,) => {
+const handeChangeSelection = (direction) => {
   
+  let imageId = selectedImage.id + direction
+  if(imageId === 0||imageId > photoData.length){
+    console.log('start/end')
+    return
+  }else{
+    const lightboxDisplay = photoData.filter((photo)=> photo.id === (imageId))
+    console.log("change "+ selectedImage.id +" to " + lightboxDisplay[0].id)
+    setSelectedImage(lightboxDisplay[0])
+  }
 }
 
 
@@ -36,26 +44,26 @@ const handeChangeSelcetion = (direction, index,) => {
       <div className='photo-gallery'>
         <div className="gallery-row">
           <div className='gallery-col'>
-          {photoData.slice(0,5).map((photo, index)=>{
-            return(<><img onClick={()=>{handleClickPhoto(photo, index)}} key={index} src={photo.src} alt={photo.alt} className='gallery-images' />
+          {photoData.slice(0,6).map((photo)=>{
+            return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}
           </div>
           <div className="gallery-col">
-          {photoData.slice(5,10).map((photo, index)=>{
-            return(<><img onClick={()=>{handleClickPhoto(photo, index)}} key={index} src={photo.src} alt={photo.alt} className='gallery-images' />
+          {photoData.slice(6,11).map((photo)=>{
+            return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}
           </div>
           <div className="gallery-col">
-          {photoData.slice(10,14).map((photo, index)=>{
-            return(<><img onClick={()=>{handleClickPhoto(photo, index)}} key={index} src={photo.src} alt={photo.alt} className='gallery-images' />
+          {photoData.slice(11,15).map((photo)=>{
+            return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}
           </div>
           <div className="gallery-col">
-          {photoData.slice(14,18).map((photo, index)=>{
-            return(<><img onClick={()=>{handleClickPhoto(photo, index)}} key={index} src={photo.src} alt={photo.alt} className='gallery-images' />
+          {photoData.slice(15,19).map((photo)=>{
+            return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}
           </div>
@@ -63,7 +71,7 @@ const handeChangeSelcetion = (direction, index,) => {
 
 
         </div>
-        <MyModal selectedImage={selectedImage} currentIndex={currentIndex} onHide={() => setModalShow(false)} show={modalShow}/>
+        <Lightbox handeChangeSelection={handeChangeSelection} selectedImage={selectedImage} onHide={() => setModalShow(false)} show={modalShow}/>
       </div>
     </div>  
   )

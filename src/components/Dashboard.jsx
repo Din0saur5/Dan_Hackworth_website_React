@@ -48,12 +48,12 @@ const DashBoard = () => {
   return (
     
     
-    <Container className='dashboard' id="dashboard">
+    <Container className='dashboard' >
       <br/>
       <Row>
         <Col sm={8}>
         
-          <Card 
+          <Card id="dashboard"
             border='light'   
             text='light'
             bg='dark'

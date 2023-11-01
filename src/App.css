@@ -156,7 +156,7 @@ article{
   .gallery-col img{
     max-width: 100%;
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 3%;
     vertical-align: middle;
   }
 
@@ -183,7 +183,7 @@ article{
     }
     .gallery-col img{
       max-width: 30%;
-      margin-left: 2%
+      margin: 0 0 0 2% 
     }
   }
   
@@ -197,6 +197,7 @@ article{
     }
     .gallery-col img{
       max-width: 30%;
-      margin-left: 2%
+      margin: 0 0 0 2% 
+    
     }
   }

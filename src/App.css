@@ -89,6 +89,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     margin-bottom:0px;
    
   }
+  
 }
 
 /*home specific*/
@@ -97,6 +98,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     block-size: fit-content;
 
 }
+
 /*about specific*/
 .deep-about{
   background-image: url("/blue.jpg");

@@ -118,6 +118,10 @@ const DashBoard = () => {
           </Card>
           </a>
         </Col>
+          <Col xs lg = "2" className='dash-spacer'></Col>
+        <Col  >
+        <Link to="/contact"><Button onClick={()=>{window.scrollTo(0, 0)}} className='contact-btn'>Contact Me</Button></Link>
+        </Col>
        
       </Row>
     

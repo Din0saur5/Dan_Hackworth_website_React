@@ -1,10 +1,16 @@
 
+.headImg{
+    max-height: 80%
+}
+
 .background{
     background-color: black;
    z-index: 5;
    position:relative;
    display: flex;
    justify-content: center;
+   height: 80vh;
+
 }
 
 .deep-portfolio{
@@ -15,15 +21,21 @@
 }
 .desc-box{
     border: 2px solid #e60073;
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 45vw;
     margin:auto;
-    margin-top: 30%;
+    margin-top: 10%;
+    margin-bottom: 20%;
     box-shadow: 0 0 20px 8px #e60073;
     transition: all .2s ease-in-out
 }
 .desc-box:hover{
     box-shadow: 0 0 30px 20px #e60073;
+}
+
+h3{
+    font-family:monospace;
+    color:#fff;
 }
 
 .left-curly{
@@ -53,6 +65,36 @@
     z-index: 200;
     background-color: black;
 }
+
+ 
+ .animated {
+    animation: MoveUpDown 1500ms linear infinite;
+    
+    position: absolute;
+    top: 80%;
+   width: 100px;
+    margin:auto;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+.info{
+    margin-block-start: -5%;
+    word-break: break-all;
+    width:60%;
+   
+}
+.info p{
+    margin-left: 5%;
+}
+
 
 
 @media screen and (max-width: 800px) {

@@ -11,7 +11,7 @@ const Navbar = () => {
   const[click, setClick] = useState(false)
 
   const handleClick = () =>  setClick(!click)
-  const closeMobileMenu = () => setClick(false)
+  const closeMobileMenu = () => {setClick(false); window.scrollTo(0, 0)}
     
   
   
@@ -20,7 +20,7 @@ const Navbar = () => {
       <IconContext.Provider value={{color:"#fff"}}>
         <nav className="navbar">
             <div className="navbar-container container">
-                <Link to="/" className='navbar-logo' onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}} style={{'marginBottom': '2%'}}>
+                <Link to="/" className='navbar-logo' onClick={closeMobileMenu} style={{'marginBottom': '2%'}}>
                     <HiFire className='navbar-icon'
                     />
                     Hackworth SE
@@ -30,17 +30,17 @@ const Navbar = () => {
                 </div>
                 <ul className={click? "nav-menu active": "nav-menu"}>
                   <li className='nav-item'>
-                    <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
+                    <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
                       Home
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/About" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}} >
+                    <NavLink to="/About" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu} >
                       About
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/Portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={()=>{closeMobileMenu; window.scrollTo(0, 0)}}>
+                    <NavLink to="/Portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
                       Portfolio
                     </NavLink>
                   </li>

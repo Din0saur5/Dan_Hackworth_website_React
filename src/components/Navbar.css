@@ -86,7 +86,7 @@
   }
   
   @media screen and (max-width: 960px) {
-    .navbar{
+    nav.navbar{
       position: sticky !important;
     }
     .NavbarItems {

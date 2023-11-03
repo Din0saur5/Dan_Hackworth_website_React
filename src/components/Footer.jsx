@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <Box id>
+        <Box style={{zIndex: '1000', position:'relative'}}>
             <h1
                 style={{
                     color: "green",

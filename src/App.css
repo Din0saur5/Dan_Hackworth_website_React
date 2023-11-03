@@ -233,4 +233,7 @@ article{
 
 
   /*portfolio*/
-  
+  div.sc-ckTThN.jqCCkO{
+    z-index: 1000;
+    position: relative;
+  }

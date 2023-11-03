@@ -4,13 +4,9 @@ export const Box = styled.div`
     padding: 5% 2.5%;
     padding-bottom: 1%;
     background: #19191a;
-    // position: absolute;
     bottom: 0;
     width: 100%;
- 
-    @media (max-width: 1000px) {
-        // padding: 70px 30px;
-    }
+    
 `;
  
 export const FooterContainer = styled.div`
@@ -19,7 +15,6 @@ export const FooterContainer = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
 `;
  
 export const Column = styled.div`

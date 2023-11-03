@@ -83,7 +83,7 @@ const photoData = [
     id: 14,
     src: '/Photos/Pumpkin-picking-20203.JPEG',
     alt: 'Pumpkin picking 20203',
-    caption: 'A caption for Pumpkin picking 20203'
+    caption: 'A caption for Pumpkin picking 2023'
   },
   {
     id: 15,

@@ -13,6 +13,22 @@ const Portfolio = () => {
     text: "React is a powerful tool for front end develpoment. A framework of JavaScript, that helps modularize code for re-usablility and declarative structure."
   }
 
+  const python = {
+    header: 'Python',
+    image: '/portfolio-icons/python.png',
+    text: 'python is cool blah blah blah'
+  }
+
+  const ubuntu = {
+   
+  }
+
+  const github = {
+
+  }
+  const other = {
+    
+  }
 
   const leftSide = '{'
   const rightSide = '}'
@@ -128,7 +144,7 @@ const Portfolio = () => {
 
             </div>
             <div className='desc-box'>
-            <p>hello world</p>
+              <MouseParallax content={python}/>
 
             </div>
             <div className='desc-box'>

@@ -13,7 +13,10 @@ function Hook() {
     <>
      
     <div className={`hook-container ${mobile}`}  >
-      <video className={mobile} src="/website-header.mp4" autoPlay={!isSmallDevice} loop muted />
+      {isSmallDevice? 
+        <div></div>:<video className={mobile} src="/website-header.mp4" autoPlay loop muted /> 
+      }
+      
   
       <h1>INNOVATION AWAITS</h1>
       <p>What are you waiting for?</p>

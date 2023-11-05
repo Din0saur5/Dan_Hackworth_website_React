@@ -87,9 +87,9 @@ const DashBoard = () => {
           </Link>
           </Col>
       </Row>
-      
-      <Row  md="auto">
-        <Col>
+      <br/>
+      <Row  style={{justifyContent: 'center'}} md="auto">
+        <Col sm={15} >
         <a style={{"textDecoration":"none"}} href={blogPost.url} >
           <Card 
             text='dark'
@@ -118,13 +118,11 @@ const DashBoard = () => {
           </Card>
           </a>
         </Col>
-          <Col xs lg = "2" className='dash-spacer'></Col>
-        <Col  >
-        <Link to="/contact"><Button onClick={()=>{window.scrollTo(0, 0)}} className='contact-btn'>Contact Me</Button></Link>
-        </Col>
+       
        
       </Row>
     
+    <hr/>
       
     </Container>
   )

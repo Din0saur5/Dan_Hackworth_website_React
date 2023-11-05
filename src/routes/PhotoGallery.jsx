@@ -56,13 +56,13 @@ const handeChangeSelection = (direction) => {
             )})}
           </div>
           <div className="gallery-col">
-          {photoData.slice(11,15).map((photo)=>{
+          {photoData.slice(11,16).map((photo)=>{
             return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}
           </div>
           <div className="gallery-col">
-          {photoData.slice(15,19).map((photo)=>{
+          {photoData.slice(16,22).map((photo)=>{
             return(<><img onClick={()=>{handleClickPhoto(photo)}} key={photo.id} src={photo.src} alt={photo.alt} className='gallery-images' />
           </>
             )})}

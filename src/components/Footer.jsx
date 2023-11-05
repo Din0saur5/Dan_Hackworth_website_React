@@ -44,7 +44,7 @@ const Footer = () => {
                         <FooterLink href="https://github.com/Din0saur5/phase-1-project">
                             Phase-1
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/Din0saur5/Team-1-phase-2-project">
                             Phase-2
                         </FooterLink>
                         <FooterLink href="#">
@@ -73,7 +73,7 @@ const Footer = () => {
                         </FooterLink>
                     </Column>
                     <Column >
-                        <Heading>Connections</Heading>
+                        <Heading>Connections [non-links]</Heading>
                         <FooterLink href="#">
                             <i >
                                 <span

@@ -1,22 +1,25 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse'
+import { Link } from 'react-router-dom'
 
 const MouseParallax = ({content}) => {
-    const {text, header, image} = content
+    const {text, header, image, link, linkText} = content
+    let linkTextDisplay = 'Launch Repositories'
+    if(linkText.length>1){ linkTextDisplay=linkText}
   return (
-    <div>
+    <div className='desktop'>
             
             <div
               style={{
-                height: "100%",
+                
                 display: "flex",
                 flexWrap:'wrap',
                 justifyContent: 'space-between'
                 
               }}
             >
-              <h1 style={{ textAlign: "left", margin: "0 0 20px 0" }}>
+              <h1 style={{ textAlign: "left", margin: "10px 0 0 20px" }}>
                 {header}
               </h1>
               <MouseParallaxContainer
@@ -25,11 +28,13 @@ const MouseParallax = ({content}) => {
                   position:'relative',
                   width: "auto",
                   display: "grid",
+                  alignContent:"center",
+                  height: '25vh',
                   
     
                 }}
-                globalFactorX={0.3}
-                globalFactorY={0.3}
+                globalFactorX={0.4}
+                globalFactorY={0.4}
                 resetOnLeave
               >
                 
@@ -52,8 +57,7 @@ const MouseParallax = ({content}) => {
               </MouseParallaxContainer>
               <div className='info'>
               <p>{text}</p>
-              
-              <Button>Launch Repos</Button>
+              <Link style={{marginInlineStart:'70%', position:'relative',bottom:'10%'}} to={link}>{linkTextDisplay}</Link>
               </div>
           </div>
     

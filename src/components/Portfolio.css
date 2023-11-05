@@ -112,15 +112,15 @@ h3{
         .base-blocker{
             display:none;
         }
-    .deep-portfolio{
-        height: 420vh;
+    div.deep-portfolio{
+        height: 350vh;
     }
 }
 
 .mobile{
     display: none;
 }
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1200px) and (min-width:800px)
 { div.deep-portfolio{
     height: 600vh;
 }}

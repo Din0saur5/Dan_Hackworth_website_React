@@ -16,7 +16,7 @@ const [index, setIndex] = useState(0);
     
     <Carousel activeIndex={index} onSelect={handleSelect} className='Carousel'touch={true} >
      {photoData.slice(0,5).map(photo=>{
-        return (<Carousel.Item className='carousel-item'>
+        return (<Carousel.Item key={photo.id} className='carousel-item'>
         <img src={photo.src} alt={photo.alt} className='gallery-icon'/>
     
       </Carousel.Item>

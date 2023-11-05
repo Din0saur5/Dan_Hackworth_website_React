@@ -188,21 +188,25 @@ article{
     }
     .gallery-col img{
       max-width: 30%;
-      margin: 0 0 0 2% 
+      margin: 0 0 0 2% ;
+    }
+    .gallery-images{
+      border: 1px #fff;
     }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .gallery-col {
-      flex: 100%;
+      flex: 20%;
       max-width: 100%;
-    
+      
       
     }
     .gallery-col img{
-      max-width: 30%;
-      margin: 0 0 0 2% 
+      max-width: 100%;
+      margin: 2% 0 0 2%; 
+      border: 2px solid black;
     
     }
   }

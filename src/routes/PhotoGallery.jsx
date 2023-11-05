@@ -28,11 +28,11 @@ const handleClickPhoto = (photo) => {
 const handeChangeSelection = (direction) => {
   
   let imageId = selectedImage.id + direction
-  if(imageId === 0||imageId > photoData.length){
-    console.log('start/end')
-    return
-  }else{
-    const lightboxDisplay = photoData.filter((photo)=> photo.id === (imageId))
+  let lightboxDisplay
+  if(imageId === 0){ setSelectedImage(photoData[photoData.length-1])}
+  else if(imageId > photoData.length){ setSelectedImage(photoData[0])}    
+  else{
+    lightboxDisplay = photoData.filter((photo)=> photo.id === (imageId))
     console.log("change "+ selectedImage.id +" to " + lightboxDisplay[0].id)
     setSelectedImage(lightboxDisplay[0])
   }
@@ -71,7 +71,7 @@ const handeChangeSelection = (direction) => {
 
 
         </div>
-        <Lightbox handeChangeSelection={handeChangeSelection} selectedImage={selectedImage} onHide={() => setModalShow(false)} show={modalShow}/>
+        <Lightbox handeChangeSelection={handeChangeSelection} length= {photoData.length} selectedImage={selectedImage} onHide={() => setModalShow(false)} show={modalShow}/>
       </div>
     </div>  
   )

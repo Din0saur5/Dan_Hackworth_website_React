@@ -23,14 +23,16 @@ a:visited{
     display: block;
   margin-left: auto;
   margin-right: auto;
-  height:400px;
-  width:fit-content;
+  height:100%;
+  width:auto;
 
   }
 .Carousel{
     height: 20%;
 }
-
+.carousel-item{
+    height: 400px;
+}
 
 
 .contact-btn{
@@ -58,6 +60,12 @@ a:visited{
     }
     .mobile{
         display: inline-flex;
+    }
+    .gallery-icon{  
+        max-height: 20vh;
+    }
+    .carousel-item{
+        height: 25vh;
     }
 
    

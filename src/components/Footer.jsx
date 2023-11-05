@@ -29,11 +29,13 @@ const Footer = () => {
                             Blog || Dev.to
                         </FooterLink>
                         <FooterLink href="https://github.com/Din0saur5">
-                            Portfolio || Github
+                            Github || Din0saur5
                         </FooterLink>
                         <Link style={{"textDecoration": "none"}} to="/Contact"onClick={()=> {window.scrollTo(0, 0)}}> <FooterLink >Contact Me</FooterLink></Link>
                         <br/>
                         <Link style={{"textDecoration": "none"}} to="/photo gallery"onClick={()=> {window.scrollTo(0, 0)}}> <FooterLink >Photo Gallery</FooterLink></Link>
+                        <br/>
+                        <Link style={{"textDecoration": "none"}} to="/portfolio"onClick={()=> {window.scrollTo({top:0,behavior:'instant'})}}> <FooterLink >Portfolio</FooterLink></Link>
   
                     </Column>
                     <Column>

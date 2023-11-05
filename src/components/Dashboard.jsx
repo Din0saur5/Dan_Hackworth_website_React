@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Card, Col, Container, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import "./Dashboard.css"
+import './Button.css'
 import PhotoCarousel from './PhotoCarousel'
 import { Link } from 'react-router-dom'
 import photoData from '../photoData';
@@ -61,7 +62,7 @@ const DashBoard = () => {
             <Card.Header>Photo Gallery</Card.Header>
             <Card.Body>
               <PhotoCarousel photoData={photoData}/>
-               <Link to="/photo gallery" onClick={()=>{window.scrollTo(0, 0)}} style={{"textDecoration":"none"}}><Button>View All Photos</Button></Link>
+               <Link to="/photo gallery" onClick={()=>{window.scrollTo(0, 0)}} style={{"textDecoration":"none"}}><div className='btn--primary btn--medium'>View All Photos</div></Link>
             </Card.Body>
           </Card>
           

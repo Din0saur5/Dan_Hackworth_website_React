@@ -1,5 +1,6 @@
 .modal {
-    overflow-y: auto;
+    overflow-y: hidden;
+    height: 100vh;
     
     
 }
@@ -15,22 +16,33 @@
 
 .selected-image{
     
-    max-height: 80vh;
+    max-height: 75vh;
     max-width: 80%;
     padding:0px
     
 }
+.lightbox-frame{
+    display:flex;
+    justify-content:center;
+    height:80vh;
+}
 
 .flex-container{
     display:flex;
+    height: 75vh;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 2%;
+    align-items: center;
+    width: 90%;
 }
 .lightbox-col{
     display: flex;
     height: 80vh;
     align-items: center;
     cursor: pointer;
+    width: 50%;
    
 }
 .right{
@@ -47,4 +59,12 @@
 }
 .noSelect:focus {
     outline: none !important;
+}
+@media screen  and (max-width: 600px) {
+    .selected-image{
+        max-width:100%;
+        max-height: 90%;
+    }
+    
+
 }

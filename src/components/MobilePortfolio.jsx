@@ -36,7 +36,7 @@ function MobilePortfolio({content}) {
             {text}
           </p> 
           
-         <Link className='launch-repos' to={link}>{linkTextDisplay}</Link>
+         <a className='launch-repos' href={link}>{linkTextDisplay}</a>
         
           
         </Offcanvas.Body>

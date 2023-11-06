@@ -35,12 +35,12 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/About" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu} >
+                    <NavLink to="/about" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu} >
                       About
                     </NavLink>
                   </li>
                   <li className='nav-item'>
-                    <NavLink to="/Portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
+                    <NavLink to="/portfolio" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
                       Portfolio
                     </NavLink>
                   </li>

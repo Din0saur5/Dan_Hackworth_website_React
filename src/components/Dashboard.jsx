@@ -62,13 +62,13 @@ const DashBoard = () => {
             <Card.Header>Photo Gallery</Card.Header>
             <Card.Body>
               <PhotoCarousel photoData={photoData}/>
-               <Link to="/photo-gallery" onClick={()=>{window.scrollTo(0, 0)}} style={{"textDecoration":"none"}}><div className='btn--primary btn--medium'>View All Photos</div></Link>
+               <Link to="/photo-gallery" onClick={()=>{window.scrollTo({top:0,behavior:'instant'})}} style={{"textDecoration":"none"}}><div className='btn--primary btn--medium'>View All Photos</div></Link>
             </Card.Body>
           </Card>
           
           </Col>
         <Col sm={4}>
-         <Link style={{"textDecoration":"none"}} to="/About" onClick={()=>{window.scrollTo(0, 0)}}>
+         <Link style={{"textDecoration":"none"}} to="/About" onClick={()=>{window.scrollTo({top:0,behavior:'instant'})}}>
           <Card 
           
             text='dark'

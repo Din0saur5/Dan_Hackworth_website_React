@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
-import {HiFire} from "react-icons/hi"
+import {GiAbstract049} from "react-icons/gi"
 import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons"
 
@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container container">
                 <Link to="/" className='navbar-logo' onClick={closeMobileMenu} style={{'marginBottom': '2%'}}>
-                    <HiFire className='navbar-icon'
+                    <GiAbstract049 className='navbar-icon'
                     />
                     Hackworth SE
                 </Link>

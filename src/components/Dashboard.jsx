@@ -12,7 +12,7 @@ const DashBoard = () => {
   const [blogPost, setBlogPost] = useState({});
 
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=din0saur5")
+    fetch("/.netlify/functions/api")
       .then((response) => response.json())
       .then((data) => {
         const {canonical_url, title, description, tag_list, reading_time_minutes, readable_publish_date} = data[0]

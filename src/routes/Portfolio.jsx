@@ -48,7 +48,7 @@ const Portfolio = () => {
   const other = {
     header: 'Foundational Tools',
     image: '/portfolio-icons/VSC.png',
-    text: `In order to operate any of the aforementioned languages, I have to build a foundation, and among the many programs I use, Ubuntu with Linux forms the sturdy base. It's like the canvas on which my creative coding ideas come to life. Npm, a JavaScript package manager, is my toolbox, making it easy to access and manage various libraries. Vite, with its lightning-fast development server, accelerates my web projects. Finally, Visual Studio Code (VSC) serves as my trusty editor, where I craft and fine-tune my code. Together, these tools ensure a seamless and productive coding experience. My next projects will include more focus on backend development using python at Flatiron School and nodeJS, on my own.` ,   
+    text: "To navigate the diverse realm of programming languages, I rely on Ubuntu with Linux as my foundational platform. It acts as the canvas for my coding endeavors. Npm, the JavaScript package manager, is my versatile toolbox for library management. Vite expedites my web projects with its  development server.  I use Visual Studio Code (VSC) as my editor. These tools collectively guarantee a seamless and productive coding experience. Future endeavors involve delving into backend development using Python at Flatiron School and exploring Node.js independently.",
     link: 'https://github.com/Din0saur5',
     linkText: 'Github Overview'
     

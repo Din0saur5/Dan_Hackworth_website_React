@@ -50,7 +50,7 @@ const MouseParallax = ({content}) => {
                     height: "fit-content"
                   }}
                 >
-                  <img width={'80%'} height="30%" src={image} alt="" />
+                  <img maxWidth={'80%'} maxHeight="30%" src={image} alt="" />
                 </MouseParallaxChild>
               
                 

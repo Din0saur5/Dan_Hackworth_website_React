@@ -15,7 +15,7 @@
 
 .deep-portfolio{
     background-color: black;
-    height: 725dvh;
+    height: 735dvh;
     width: 100%;
     z-index:-2;
     display: flex;
@@ -134,38 +134,37 @@ h3{
     display: block; 
         .card-img, .card-img-bottom, .card-img-top {
             height: 20vh;
-            min-height: 30%; 
-            width: 20vh;
-            min-width: 30%; 
+            width: auto; 
+            
         } 
     }
    
     }
-
-@media screen and (max-height: 700px){
+@media screen and (max-height: 500px) {
     div.deep-portfolio{
-        height: 900dvh
+        height: 1500dvh !important;
+        
     }
 }
-@media screen and (max-height: 500px){
+
+@media screen and (max-height: 920px) and (max-width: 800px){
     div.deep-portfolio{
-        height: 1200dvh;
+        height: 500dvh;
+        
+    }
     .desktop{
         display: none ;
         }
-    .desc-box{
-        margin-top: 15%;
-        }
+    
     .mobile{
         display: block; 
         .card-img, .card-img-bottom, .card-img-top {
                 height: 20vh;
-                min-height: 30%; 
-                width: 20vh;
-                min-width: 30%; 
+                
+               
             } 
         }
-    }
+    
 }
 
 

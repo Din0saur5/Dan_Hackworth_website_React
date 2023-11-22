@@ -57,7 +57,10 @@ const MouseParallax = ({content}) => {
               </MouseParallaxContainer>
               <div className='info'>
               <p>{text}</p>
-              <Link style={{marginInlineStart:'70%', position:'relative',bottom:'10%'}} to={link}>{linkTextDisplay}</Link>
+              <br/>
+              <p>
+              <Link style={{marginInlineStart:'50%', position:'relative',bottom:'10%'}} to={link}>{linkTextDisplay}</Link>
+              </p>
               </div>
           </div>
     

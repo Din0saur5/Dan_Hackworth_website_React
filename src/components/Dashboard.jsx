@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Card, Col, Container, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
+import { Button, Card, CardFooter, Col, Container, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import "./Dashboard.css"
 import './Button.css'
 import PhotoCarousel from './PhotoCarousel'
@@ -59,11 +59,11 @@ const DashBoard = () => {
             text='light'
             bg='dark'
             className="mb-2 dash-Card">
-            <Card.Header>Photo Gallery</Card.Header>
+            <Card.Header style={{backgroundColor:"#212529"}} >Photo Gallery</Card.Header>
             <Card.Body>
               <PhotoCarousel photoData={photoData}/>
-               <Link to="/photo-gallery" onClick={()=>{window.scrollTo({top:0,behavior:'instant'})}} style={{"textDecoration":"none"}}><div className='btn--primary btn--medium'>View All Photos</div></Link>
             </Card.Body>
+            <Card.Footer style={{backgroundColor:"#212529"}}><Link to="/photo-gallery" onClick={()=>{window.scrollTo({top:0,behavior:'instant'})}} style={{"textDecoration":"none"}}><div className='btn--primary btn--medium'>View All Photos</div></Link></Card.Footer>
           </Card>
           
           </Col>

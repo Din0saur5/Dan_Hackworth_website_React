@@ -131,7 +131,7 @@ const photoData = [
     id: 22,
     src: '/Photos/Dan-and-goat.jpeg',
     alt: 'Meeting a Baby Goat',
-    caption: 'Brought the fiance to an early morning goat meet up--amazing what a baby goat will do for the spirit'
+    caption: 'An early morning goat meet up--amazing what a baby goat will do for the spirit'
   }
 
 

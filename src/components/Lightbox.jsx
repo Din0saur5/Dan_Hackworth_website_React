@@ -9,7 +9,7 @@ const Lightbox = ({length, selectedImage, handeChangeSelection, show, onHide}) =
     <>
       <Modal
       
-        fullscreen={'sm-down'}
+        fullscreen={'xl-down'}
         show={show}
         onHide={onHide}
       size="lg"

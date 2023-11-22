@@ -86,8 +86,9 @@ const Portfolio = () => {
           <div style={{ wordBreak:"normal", width:'60%' }}>
           <p  style={{marginBlockStart: '5%', marginLeft: '10%', lineHeight: '2'}}>JavaScript, HTML, and CSS form the essential trio for web development. JavaScript adds dynamic functionality and interactivity to web pages, while HTML structures and defines the content. CSS, on the other hand, is responsible for styling and presentation, ensuring a visually appealing user experience. My experience with web development started here from creating my first Google-App-Scripts spreadsheet scripts to making my first webpage and API requests. Some of my earliest work is found in these Repositories!
            </p>
-         
-           <a style={{marginInlineStart:'70%', position:'relative',bottom:'5%'}} href={htmlJsCss.link}>Launch Repositories</a>
+           <p>
+           <a style={{marginInlineStart:'50%', position:'relative',bottom:'5%'}} href={htmlJsCss.link}>Launch Repositories</a>
+           </p>
             </div>
           <MouseParallaxContainer
             className="parallax"
@@ -95,7 +96,7 @@ const Portfolio = () => {
               position:'relative',
               width: "auto",
               display: "grid",
-              height: '50vh',
+              height: '60vh',
               alignContent: 'center',
               marginBlockStart: "-8%",
             }}

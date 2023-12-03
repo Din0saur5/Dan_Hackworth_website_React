@@ -20,12 +20,10 @@ a:visited{
 }
 
 .gallery-icon{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height:100%;
-  width:auto;
-
+  margin:auto;  
+  width: 40vw;
+  aspect-ratio: 16/9;
+  object-fit: contain;
   }
 .Carousel{
     height: 20%;
@@ -62,13 +60,11 @@ a:visited{
     .mobile{
         display: inline-flex;
     }
-    .gallery-icon{  
-        max-height: 20vh;
-    }
+    
     .carousel-item{
-        height: 25vh;
+        height: 20vh;
     }
-
+    
    
 }
 

@@ -3,8 +3,7 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  
 } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
@@ -24,7 +23,7 @@ const AppLayout = () =>{
     <>
     <Navbar/>
     <Outlet/>
-    <Footer />
+    <Footer/>
     </>
   )
 }
@@ -52,7 +51,7 @@ const router = createBrowserRouter([
         element: <Portfolio/>,
       },
       {
-        path: "/photo-gallery",
+        path: "/gallery",
         element: <PhotoGallery/>,
       }
     ]

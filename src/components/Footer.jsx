@@ -33,7 +33,7 @@ const Footer = () => {
                         </FooterLink>
                         <Link style={{"textDecoration": "none"}} to="/contact"onClick={()=> {window.scrollTo({top:0,behavior:'instant'})}}> <FooterLink >Contact Me</FooterLink></Link>
                         <br/>
-                        <Link style={{"textDecoration": "none"}} to="/photo-gallery"onClick={()=> {window.scrollTo({top:0,behavior:'instant'})}}> <FooterLink >Photo Gallery</FooterLink></Link>
+                        <Link style={{"textDecoration": "none"}} to="/gallery"onClick={()=> {window.scrollTo({top:0,behavior:'instant'})}}> <FooterLink >Photo Gallery</FooterLink></Link>
                         <br/>
                         <Link style={{"textDecoration": "none"}} to="/portfolio"onClick={()=> {window.scrollTo({top:0,behavior:'instant'})}}> <FooterLink >Portfolio</FooterLink></Link>
   

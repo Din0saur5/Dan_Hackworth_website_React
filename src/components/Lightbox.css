@@ -17,9 +17,13 @@
 }
 
 .selected-image{
-    max-width:100%;
+    /* max-width:100%;
     height: 60vh;
-    padding:0px;
+    padding:0px; */
+    width:35vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
 }
 .lightbox-frame{
     display:flex;
@@ -63,8 +67,7 @@
 }
 @media screen  and (max-width: 600px) {
     .selected-image{
-        max-width: 80dvh;
-        max-height: 60dvh;
+        width: 80dvw;
     }
     
 

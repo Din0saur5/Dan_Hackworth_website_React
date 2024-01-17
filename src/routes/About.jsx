@@ -54,6 +54,9 @@ const About = () => {
         Now, as a software engineering student, I'm excited to explore more coding and possible avenues for a career. Currently, my enthusiasm lies in crafting AI algorithms, and I'm eager to discover where my unique skills can make a valuable contribution to any team. 
         </p>
      <p className='about-text' style={{'textAlign':'center'}}>Thanks for reading!</p>
+     <a href="/Daniel_Hackworth_Resume_2024.pdf" download>
+      <img src="/Photos/resume-icon-png-19026.png" />
+      </a>
       </article>
       </div>
       

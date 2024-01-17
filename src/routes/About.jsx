@@ -53,10 +53,11 @@ const About = () => {
         My journey led me to the Flatiron School, recommended by a friend who also overcame legal challenges. 
         Now, as a software engineering student, I'm excited to explore more coding and possible avenues for a career. Currently, my enthusiasm lies in crafting AI algorithms, and I'm eager to discover where my unique skills can make a valuable contribution to any team. 
         </p>
-     <p className='about-text' style={{'textAlign':'center'}}>Thanks for reading!</p>
+     <p className='about-text' style={{'textAlign':'center'}}>Thanks for reading! -- click to download my resume!
      <a href="/Daniel_Hackworth_Resume_2024.pdf" download>
-      <img src="/Photos/resume-icon-png-19026.png" />
+      <img style={{height:'7rem'}} src="/Photos/resume-icon-png-19026.png" />
       </a>
+      </p>
       </article>
       </div>
       

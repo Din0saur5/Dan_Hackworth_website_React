@@ -52,7 +52,7 @@ const Footer = () => {
                         <FooterLink href="https://github.com/Din0saur5/phase-3-team-4-project">
                             Phase-3
                         </FooterLink>
-                        <FooterLink href="https://eatsy-8ewa.onrender.com/">
+                        <FooterLink href="https://github.com/Din0saur5/Eatsy">
                             Phase-4
                         </FooterLink>
                         <FooterLink href="https://cozshare.onrender.com/">

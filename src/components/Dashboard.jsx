@@ -74,11 +74,11 @@ const DashBoard = () => {
             text='dark'
             bg='light'
             className="mb-2 dash-Card">
-            <Card.Img variant='top' src='/Photos/profile-picture.jpeg'></Card.Img>
+            <Card.Img variant='top' src='/Photos/00009-headshot.jpg'></Card.Img>
             <Card.Body>
              <Card.Title> About Me </Card.Title>
               <Card.Text className="card-text">
-              My name is Daniel Hackworth. I'm 26 years old, originally from Redding,
+              My name is Daniel Hackworth. I&apos;m 26 years old, originally from Redding,
                Connecticut. I am currently a student in Flatiron School for software engineering.
                 I'm a passionate and intuitive study when it comes to coding.
                 I am proficient in several coding languages but more on that later...

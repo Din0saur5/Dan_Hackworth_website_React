@@ -1,4 +1,4 @@
-import React from "react";
+
 //add first 5 to dashboard
 const photoData = [
   {
@@ -21,9 +21,9 @@ const photoData = [
   },
   {
     id: 4,
-    src: '/Photos/Wizard-Dan-vs-dragons.JPG',
-    alt: 'Wizard Dan vs Dragons',
-    caption: 'YOU SHALL NOT PASS!'
+    src: '/Photos/00013-headshot.jpg',
+    alt: 'landscape headshot',
+    caption: 'What can I do for you?'
   },
   {
     id: 5,
@@ -33,9 +33,9 @@ const photoData = [
   },
   {
     id: 6,
-    src: '/Photos/profile-picture.jpeg',
-    alt: 'Pumpkin Picking 2022',
-    caption: 'Best apple cider donuts in CT'
+    src: '/Photos/barbarian_dan.jpg',
+    alt: 'Barbarian Dan',
+    caption: 'Did someone say quest?'
   },
   {
     id: 7,
@@ -51,9 +51,9 @@ const photoData = [
   },
   {
     id: 9,
-    src: '/Photos/Finished-wizard-robes.jpg',
-    alt: 'Finished Wizard Robes',
-    caption: 'Freshly painted, our costumes are all home-made'
+    src: '/Photos/casual-Dan-headshot.jpg',
+    alt: 'Business Casual',
+    caption: 'Website of the day'
   },
   {
     id: 10,
@@ -70,7 +70,7 @@ const photoData = [
   {
     id: 12,
     src: '/Photos/Spiffy-Dan.JPG',
-    alt: 'Spiffy Dan',
+    alt: 'Spiffy',
     caption: 'Supafly'
   },
   {
@@ -93,9 +93,9 @@ const photoData = [
   },
   {
     id: 16,
-    src: '/Photos/barbarian_dan.jpg',
-    alt: 'Barbarian Dan',
-    caption: 'Did someone say quest?'
+    src: '/Photos/profile-picture.jpeg',
+    alt: 'Pumpkin Picking 2022',
+    caption: 'Best apple cider donuts in CT'
   },
   {
     id: 17,
@@ -132,6 +132,12 @@ const photoData = [
     src: '/Photos/Dan-and-goat.jpeg',
     alt: 'Meeting a Baby Goat',
     caption: 'An early morning goat meet up--amazing what a baby goat will do for the spirit'
+  },
+  {
+    id: 23,
+    src: '/Photos/Wizard-Dan-vs-dragons.JPG',
+    alt: 'Wizard Dan vs Dragons',
+    caption: 'YOU SHALL NOT PASS!'
   }
 
 

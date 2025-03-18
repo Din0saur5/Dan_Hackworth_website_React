@@ -136,6 +136,13 @@ article{
   font-size: 20pt;
   color:#fff;
   margin-bottom: 2%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  /* Prevents text from overflowing the container */
+  max-width: 100%;
+  display: block;
 }
 
  /* photo Gallery specific*/

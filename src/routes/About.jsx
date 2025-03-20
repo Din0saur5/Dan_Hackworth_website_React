@@ -14,27 +14,21 @@ const About = () => {
             />
             <br/> <br/>
       <p className='about-text initial'>
-      &emsp;My name is Daniel Hackworth. At 26 years old, originally from Redding, Connecticut, I've now reached an exciting milestone in my career journey, having recently graduated from Flatiron School as a software engineer. My time at Flatiron School has not only honed my technical skills but also solidified my passion for coding, which I approach with intuitive understanding and dedication.
-      </p>
+      &emsp;My name is Daniel Hackworth, a 27-year-old software engineer, CTO, and project manager based in Winchester, Connecticut. My journey into software development has been shaped by resilience, adaptability, and a passion for leveraging technology to solve real-world problems.</p>
       <p className='about-text'>
-      &emsp;I hold an Associate of Science degree in Horticulture from the Pennsylvania College of Technology in Williamsport, Pennsylvania. My diverse interests range from enjoying Renaissance fairs with my fiancée and crafting costumes to fitness and cooking. At home, my life is brightened by the presence of Kali, my spirited all-black Doberdor, whose lively and affectionate nature brings joy to every day.
-         </p>
+      &emsp;I graduated from Flatiron School with a focus on full-stack development, reinforcing my technical foundation in Python, Flask, JavaScript, React, SQL, and AI integration. Since then, I've co-founded Patterson & Hackworth Digital Solutions, a digital marketing and web development firm, where I build AI-integrated chatbots and scalable applications for nonprofits and small businesses. </p>
           
-       <p className='about-text'> &emsp;Professionally, my journey has been unique and transformative. After my release from incarceration, a chapter that profoundly reshaped my outlook and spurred personal growth, I found purpose and connection as a dog walker and pet sitter. This role, which I fulfilled for nearly two years, was more than a job; it was a stepping stone to rebuilding my life and transitioning into a new chapter on acceptance to FlatIron School. To now, where I am a partner at <a href='https://www.pattersonhackworth.com/' className='about-text'><b><u>Patterson & Hackworth Digital Solutions</u></b></a>, A digital marketing and web development firm!
-          </p>
+       <p className='about-text'> &emsp;Beyond that, I serve as Senior-Lead Engineer & Project Manager at Pinpoint, where I lead development teams, oversee project workflows, and integrate machine learning to enhance functionality. My role as Head of Community at UpskillHero allows me to bridge technology and user engagement, managing beta testers, gathering feedback, and optimizing platform growth.</p>
           
           <p className='about-text'>   
-          &emsp;My coding journey, which began in high school with a foray into programming and leading a robotics team. Some time passed, as I purused other interests but, took a pivotal turn back to programming when I faced the challenge of managing bookkeeping while battling Lyme disease. This challenge sparked the creation of a comprehensive bookkeeping program using JavaScript and Google Apps Script, complete with integrated APIs. This achievement marked the beginning of my dedication to software development.
-           </p>
+          &emsp;In addition to software development, I am currently working with Meehan Law as a Tech Consultant & Forensic Accounting Consultant on a high-profile civil case. My role involves analyzing financial records, investigating data discrepancies, and providing technical expertise to support legal proceedings. This work has allowed me to apply my problem-solving skills in a legal context, ensuring data integrity and uncovering critical insights.</p>
            <p className='about-text'> &emsp;
-           Since then, I have embarked on several exciting projects, showcasing my expanded skill set. CozShare, a full-stack application using Flask and React, was inspired by my interest in building specialized social networks. My web app, Eatsy, demonstrates my ability to create stylish and intuitive designs for sharing recipes, incorporating modern security practices. Additionally, my involvement in DreamScape VR, a front-end forward web app for an innovative VR game, highlights my skills in creating dynamic user experiences. I&apos;ve also developed Create-Hackworth-App, a tool to assist peers with integrating modern solutions in their projects.
-        </p>
+           My path to this point has been unconventional but deeply rewarding. After overcoming personal challenges, I found my footing as a software engineer, turning my passion for problem-solving into a career. Whether developing AI-driven business tools, building automation systems, or scaling web applications, I thrive at the intersection of technology and impact.</p>
         <p className='about-text'>   
-          &emsp;Now, as a graduate equipped with a robust portfolio of technical projects and a deep understanding of software engineering principles, I am eager to apply my skills in a professional setting. My journey has been marked by resilience, creativity, and a relentless pursuit of growth. I look forward to exploring opportunities where my unique blend of technical expertise, life experiences, and personal values can contribute significantly to innovative projects and teams.
-           </p>
+          &emsp;When I’m not coding, I enjoy Renaissance fairs, costume crafting, fitness, and cooking. At home, my Doberdor, Kali, ensures life is never dull. </p>
            
      <p className='about-text' style={{'textAlign':'center'}}>Thanks for reading! -- click to download my resume!
-     <a href="/Daniel_Hackworth_Resume_2024.pdf" download>
+     <a href="/Daniel_Hackworth_Resume_2025.pdf" download>
       <img style={{height:'7rem'}} src="/Photos/resume-icon-png-19026.png" />
       </a>
       </p>

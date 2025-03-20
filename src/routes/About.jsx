@@ -25,7 +25,7 @@ const About = () => {
            <p className='about-text'> &emsp;
            My path to this point has been unconventional but deeply rewarding. After overcoming personal challenges, I found my footing as a software engineer, turning my passion for problem-solving into a career. Whether developing AI-driven business tools, building automation systems, or scaling web applications, I thrive at the intersection of technology and impact.</p>
         <p className='about-text'>   
-          &emsp;When I’m not coding, I enjoy Renaissance fairs, costume crafting, fitness, and cooking. At home, my Doberdor, Kali, ensures life is never dull. </p>
+          &emsp;When I’m not coding, I enjoy Renaissance fairs, costume crafting, fitness, and cooking. At home, my lovely wife, Sheila, and our doberdor, Kali, ensure life is never dull. </p>
            
      <p className='about-text' style={{'textAlign':'center'}}>Thanks for reading! -- click to download my resume!
      <a href="/Daniel_Hackworth_Resume_2025.pdf" download>

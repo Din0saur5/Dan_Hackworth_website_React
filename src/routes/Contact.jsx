@@ -16,6 +16,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const [errors, setErrors] = useState({});
   const [captchaToken, setCaptchaToken] = useState(null);
+  const [shakeButton, setShakeButton] = useState(false);
 
   // Validation function
   const validateForm = () => {
@@ -46,9 +47,11 @@ const Contact = () => {
       return;
     }
 
-    // Validate form fields
-    if (!validateForm()) return;
-
+    if (!validateForm()) {
+      setShakeButton(true); // Trigger shake animation
+      setTimeout(() => setShakeButton(false), 500); // Reset after animation
+      return;
+    }
     const emailData = {
       name: formData.name,
       email: formData.email,
@@ -83,6 +86,8 @@ const Contact = () => {
       (err) => {
         setStatus("Failed to send message. Try again later.");
         console.error("Email sending error:", err);
+        setShakeButton(true); // Trigger shake animation on failure
+        setTimeout(() => setShakeButton(false), 500);
       }
     );
 
@@ -92,88 +97,92 @@ const Contact = () => {
   };
   return (
     <Container className="mt-4 mb-4">
-      <Row className="justify-content-md-center">
-        <Col md={8}>
-          <h2 className="text-center mb-4">Contact Me</h2>
+    <Row className="justify-content-md-center">
+      <Col md={8}>
+        <h2 className="text-center mb-4">Contact Me</h2>
 
-          {status && <Alert variant={status.includes("successfully") ? "success" : "danger"}>{status}</Alert>}
+        {status && <Alert variant={status.includes("successfully") ? "success" : "danger"}>{status}</Alert>}
 
-          <Form onSubmit={handleSubmit}>
-            {/* Name Field */}
-            <Form.Group controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                isInvalid={!!errors.name}
-              />
-              <Form.Control.Feedback type="invalid">{errors.name}</Form.Control.Feedback>
-            </Form.Group>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group controlId="name">
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              isInvalid={!!errors.name}
+            />
+            <Form.Control.Feedback type="invalid">{errors.name}</Form.Control.Feedback>
+          </Form.Group>
 
-            {/* Email Field */}
-            <Form.Group controlId="email" className="mt-3">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                isInvalid={!!errors.email}
-              />
-              <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
-            </Form.Group>
+          <Form.Group controlId="email" className="mt-3">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              isInvalid={!!errors.email}
+            />
+            <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
+          </Form.Group>
 
-            {/* Phone Field (Optional) */}
-            <Form.Group controlId="phone" className="mt-3">
-              <Form.Label>Phone (Optional)</Form.Label>
-              <Form.Control
-                type="text"
-                name="phone"
-                placeholder="Your Phone"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </Form.Group>
+          <Form.Group controlId="phone" className="mt-3">
+            <Form.Label>Phone (Optional)</Form.Label>
+            <Form.Control
+              type="text"
+              name="phone"
+              placeholder="Your Phone"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </Form.Group>
 
-            {/* Message Field */}
-            <Form.Group controlId="message" className="mt-3">
-              <Form.Label>Message</Form.Label>
-              <Form.Control
-                as="textarea"
-                name="message"
-                rows={4}
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={handleChange}
-                isInvalid={!!errors.message}
-              />
-              <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
-            </Form.Group>
+          <Form.Group controlId="message" className="mt-3">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              name="message"
+              rows={4}
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              isInvalid={!!errors.message}
+            />
+            <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
+          </Form.Group>
 
+          {/* Honeypot (Hidden Field to Block Spam Bots) */}
+          <Form.Control 
+            type="text" 
+            name="botField" 
+            style={{ display: "none" }} 
+            value={formData.botField} 
+            onChange={handleChange} 
+          />
 
-            <Form.Group className="mt-3">
+          {/* reCAPTCHA + Submit Button (Flexbox Layout) */}
+          <Form.Group className="captcha-container mt-3">
+            <div className="recaptcha-box">
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                onChange={(value) => setCaptchaValue(value)}
+                theme="dark"
+                onChange={(value) => setCaptchaToken(value)}
               />
-              {errors.captcha && <div className="text-danger mt-2">{errors.captcha}</div>}
-            </Form.Group>
+            </div>
 
-            
-            <Form.Control type="text" name="botField" style={{ display: "none" }} value={formData.botField} onChange={handleChange} />
-
-            {/* Submit Button */}
-            <Button variant="primary" type="submit" className="mt-4 w-100">
+            <Button variant="primary" type="submit" className={`submit-button ${shakeButton ? "shake" : ""}`}>
               Send Message
             </Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+          </Form.Group>
+
+        </Form>
+      </Col>
+    </Row>
+  </Container>
   )
 }
 

@@ -113,15 +113,27 @@ html, body { max-width: 100%; overflow-x: hidden; }
     
 }
 
-.initial {
+.initial-about-container{
   display: flex;
   flex-direction: row;
+}
+
+.initial {
+  display: flex;
+  
   align-content: flex-end;
 
 }
 @media screen and (max-width: 800px){
-.initial {
-  flex-direction: column;
+
+.profile-pic{
+  margin: 0px;
+  margin-right:70%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  max-height: 39vw;
+ max-width: 26vw;
+
 }
 }
 
@@ -133,15 +145,19 @@ article{
 
 
 .profile-pic{
- max-height: 500px;
- max-width:300px;
+  display: flex;
+ max-height: 30vw;
+ max-width: 20vw;
  margin-right: 50px;
  margin-bottom: 15px;
  border: 1px solid #fff;
  float: left;
  shape-outside: margin-box;
+ aspect-ratio: 2/3;
+ width: 100%;
  
 }
+
 .about-text{
   
  

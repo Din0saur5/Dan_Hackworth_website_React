@@ -5,7 +5,8 @@ const About = () => {
   return (
     <div className='deep-about'>
       <div className="about">
-        <article>
+        <article >
+          <div className='initial-about-container'>
           <img
               
               alt="profile picture"
@@ -15,6 +16,7 @@ const About = () => {
             <br/> <br/>
       <p className='about-text initial'>
       &emsp;My name is Daniel Hackworth, a 27-year-old software engineer, CTO, and project manager based in Winchester, Connecticut. My journey into software development has been shaped by resilience, adaptability, and a passion for leveraging technology to solve real-world problems.</p>
+      </div>
       <p className='about-text'>
       &emsp;I graduated from Flatiron School with a focus on full-stack development, reinforcing my technical foundation in Python, Flask, JavaScript, React, SQL, and AI integration. Since then, I've co-founded Patterson & Hackworth Digital Solutions, a digital marketing and web development firm, where I build AI-integrated chatbots and scalable applications for nonprofits and small businesses. </p>
           

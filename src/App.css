@@ -114,7 +114,15 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 
 .initial {
+  display: flex;
   flex-direction: row;
+  align-content: flex-end;
+
+}
+@media screen and (max-width: 800px){
+.initial {
+  flex-direction: column;
+}
 }
 
 article{
@@ -132,6 +140,7 @@ article{
  border: 1px solid #fff;
  float: left;
  shape-outside: margin-box;
+ 
 }
 .about-text{
   
@@ -224,7 +233,7 @@ article{
 
   /*contact me form*/
   .deep-contact{
-    background-image: url('/stacks.jpg');
+    background-color:#19191a
    
   }
   

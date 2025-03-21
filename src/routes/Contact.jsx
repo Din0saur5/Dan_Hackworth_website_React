@@ -19,6 +19,7 @@ const Contact = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [shakeButton, setShakeButton] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // Animation variants
   const fadeInUp = {
@@ -60,6 +61,8 @@ const Contact = () => {
       return;
     }
 
+    setLoading(true)
+
     const emailData = {
       name: formData.name,
       email: formData.email,
@@ -94,6 +97,7 @@ const Contact = () => {
             .catch((err) => console.error("User confirmation email failed", err));
         },
         (err) => {
+          setLoading(false)
           setStatus("Failed to send message. Try again later.");
           console.error("Email sending error:", err);
           setShakeButton(true);
@@ -110,6 +114,7 @@ const Contact = () => {
       botField: "",
     });
     setCaptchaToken(null);
+    setLoading(false)
   };
 
   return (
@@ -117,7 +122,25 @@ const Contact = () => {
       <Row className="justify-content-md-center">
         <Col md={8}>
           <AnimatePresence>
-            {!submitted ? (
+            { loading? (
+              <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <motion.img
+                src="/loading.gif" // Make sure "loading.gif" is in the public folder
+                alt="Loading..."
+                style={{ width: "100px", height: "100px" }}
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1.1 }}
+                transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
+              />
+              <p className="mt-3">Sending your message...</p>
+            </motion.div>
+            ):(!submitted ? (
               <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
                 <h2 className="text-center mb-4">Contact Me</h2>
 
@@ -177,7 +200,7 @@ const Contact = () => {
                   <p>Your message has been sent successfully. You will receive a confirmation email shortly.</p>
                 </Card>
               </motion.div>
-            )}
+            ))}
           </AnimatePresence>
         </Col>
       </Row>
